@@ -28,15 +28,17 @@ h6 {
 }
 
 .download {
-  color: #604E78;
+  background: #604E78;
+  color: #fff;
   font-weight:700;
   padding: 8px 10px 8px 10px;
+  border-radius: 8px;
 }
 
 .download:hover {
-  background: #604E78;
-  color: #fff;
-  border-radius: 8px;
+  background: #fff;
+  color: #604E78;
+  border: solid 2px #604E78;
   transition: unset;
 }
 
@@ -177,7 +179,7 @@ a:hover {
 .line-mf {
   width: 40px;
   height: 5px;
-  background-color: #0078ff;
+  background-color: #3D99AD;
   margin: 0 auto;
 }
 
@@ -216,16 +218,50 @@ a:hover {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
+
+/*------/ Talento /------*/
+
+.talent {
+  margin:auto;
+  padding: 1rem;
+}
+
+.talent-text{
+  font-size: 1rem;
+  padding-left: 0.9rem;
+  text-align: left;
+  font-weight: 700;
+}
+
+.talent-img {
+  margin-bottom:0.4rem;
+  height: 1rem;
+}
+
+
 /*------/ Tools /------*/
+.tools{
+  margin-top:3rem;
+  text-align: center;
+}
+
 .tools-img {
   height: 60px;
 }
 
+.tools-text{
+  color:#000000;
+  font-size: 0.9rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:0.5rem;
+}
+
 .container-tools{
   display: grid;
-  grid-template-columns: 60px 60px;
+  grid-template-columns: 60px 60px 60px ;
   grid-column-gap: 40px;
-  grid-template-rows: 60px 60px;
+  grid-template-rows: 60px;
   grid-row-gap: 40px;
   justify-content: center;
 }
@@ -398,7 +434,7 @@ a:hover {
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #f2f2f2;
-  border-top: 6px solid #0078ff;
+  border-top: 6px solid #604E78;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -745,6 +781,50 @@ a:hover {
   margin-bottom: 3rem;
 }
 
+.skill-box{
+  background-color: #fff;
+  height: 12rem;
+  border-radius: 0.8rem;
+  text-align: center;
+  display: flex;
+  margin: 2rem 0 2rem 0;
+}
+
+.skill-text{
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin:auto;
+  padding: 0 1rem 0 1rem;
+}
+
+.skill-box:hover .overlay {
+  opacity: 1;
+  height: 12rem;
+}
+
+.skill-description{
+  color: white;
+  font-size: 0.95rem;
+  font-style: italic;
+  padding: 0 2rem 0 2rem;
+  margin:auto;
+}
+
+.skill-tag{
+  color: white;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 0.8rem;
+  padding-top: 1rem;
+  text-transform: uppercase;
+}
+
+.skill-img{
+  height: 3rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
 .service-box:hover .ico-circle {
   transition: all 500ms ease;
   color: #fff;
@@ -771,6 +851,38 @@ a:hover {
 
 .service-box .s-description {
   color: #4e4e4e;
+}
+
+.service-content:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  display: flex;
+  height: 10rem;
+  width: 15.9375rem;
+/*top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;*/
+  opacity: 0; 
+  border-radius: 8px;
+  transition: .5s ease;
+  background-color: #4e4e4e;
+  /* background-image:linear-gradient(#604E78 10%, #3D99AD 90%);*/ 
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 /*======================================
